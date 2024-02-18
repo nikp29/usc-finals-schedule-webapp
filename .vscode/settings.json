@@ -1,0 +1,21 @@
+{
+  "detectedConfig": {
+    "typescript": false,
+    "naming": "Pascal Case",
+    "unit": "px",
+    "framework": "html-css",
+    "styling": "Tailwind"
+  },
+  "locofyConfig": {
+    "project": "Untitled",
+    "id": "65cd1fa7177ba0e729b476da",
+    "framework": "react-nextjs",
+    "typescript": false,
+    "styling": "Tailwind",
+    "unit": "px",
+    "naming": "Kebab Case",
+    "path": "public/",
+    "componentsPath": "/Users/matthewquan/Desktop/USC/CSCI401/usc-finals-schedule-webapp/src/components",
+    "screensPath": "/Users/matthewquan/Desktop/USC/CSCI401/usc-finals-schedule-webapp/src/pages"
+  }
+}
