@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Fragment>
       <Head>
-        <title>Untitled</title>
+        <title>Final Exam Finder</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
