@@ -4,64 +4,47 @@ import FinalExamTable from "./FinalExamTable";
 import moment from "moment-timezone";
 import { ICalendar } from "datebook";
 import * as FileSaver from "file-saver";
+//finals dummy data
+const DUMMY_SECTIONS = {
+  "CSCI-401": [
+    {
+      sectionNumber: "193859",
+      dayTime: "M/W 2:00PM",
+      instructor: "Marcus Smith",
+      courseCode: "CSCI-401",
+      finalExam: {
+        date: "2024-05-11",
+        time: "9AM - 12PM",
+        startTime: moment
+          .tz("2024-05-11 9:00 AM", "YYYY-MM-DD h:mm a", "America/Los_Angeles")
+          .toDate(),
+        endTime: moment
+          .tz("2024-05-11 12:00 PM", "YYYY-MM-DD h:mm a", "America/Los_Angeles")
+          .toDate(),
+      },
+    },
+    {
+      sectionNumber: "937583",
+      dayTime: "T/TH 2:00PM",
+      instructor: "Amy Lee",
+      courseCode: "CSCI-401",
+      finalExam: {
+        date: "2024-05-12",
+        time: "1PM - 4PM",
+        startTime: moment
+          .tz("2024-05-12 1:00 PM", "YYYY-MM-DD h:mm a", "America/Los_Angeles")
+          .toDate(),
+        endTime: moment
+          .tz("2024-05-12 4:00 PM", "YYYY-MM-DD h:mm a", "America/Los_Angeles")
+          .toDate(),
+      },
+    },
+    // ... more sections with their final exam details
+  ],
+  // ... other courses with their sections and final exam details
+};
 
 const InputArea = () => {
-  //finals dummy data
-  const DUMMY_SECTIONS = {
-    "CSCI-401": [
-      {
-        sectionNumber: "193859",
-        dayTime: "M/W 2:00PM",
-        instructor: "Marcus Smith",
-        courseCode: "CSCI-401",
-        finalExam: {
-          date: "2024-05-11",
-          time: "9AM - 12PM",
-          startTime: moment
-            .tz(
-              "2024-05-11 9:00 AM",
-              "YYYY-MM-DD h:mm a",
-              "America/Los_Angeles"
-            )
-            .toDate(),
-          endTime: moment
-            .tz(
-              "2024-05-11 12:00 PM",
-              "YYYY-MM-DD h:mm a",
-              "America/Los_Angeles"
-            )
-            .toDate(),
-        },
-      },
-      {
-        sectionNumber: "937583",
-        dayTime: "T/TH 2:00PM",
-        instructor: "Amy Lee",
-        courseCode: "CSCI-401",
-        finalExam: {
-          date: "2024-05-12",
-          time: "1PM - 4PM",
-          startTime: moment
-            .tz(
-              "2024-05-12 1:00 PM",
-              "YYYY-MM-DD h:mm a",
-              "America/Los_Angeles"
-            )
-            .toDate(),
-          endTime: moment
-            .tz(
-              "2024-05-12 4:00 PM",
-              "YYYY-MM-DD h:mm a",
-              "America/Los_Angeles"
-            )
-            .toDate(),
-        },
-      },
-      // ... more sections with their final exam details
-    ],
-    // ... other courses with their sections and final exam details
-  };
-
   const [courseCode, setCourseCode] = useState("");
   const [sectionsData, setSectionsData] = useState([]);
   const [selectedSections, setSelectedSections] = useState([]);
@@ -110,7 +93,7 @@ const InputArea = () => {
         // first element
         ics = new ICalendar(makeConfigFromSection(section));
       } else {
-        iCal.addEvent(new ICalendar(makeConfigFromSection(section)));
+        ics.addEvent(new ICalendar(makeConfigFromSection(section)));
       }
     });
     const blob = new Blob([ics.render()], {
