@@ -2,39 +2,70 @@ import React, { useState } from "react";
 import SectionTable from "./SectionTable";
 import FinalExamTable from "./FinalExamTable";
 import moment from "moment-timezone";
-
-//finals dummy data
-const DUMMY_SECTIONS = {
-  "CSCI-401": [
-    {
-      sectionNumber: "193859",
-      dayTime: "M/W 2:00PM",
-      instructor: "Marcus Smith",
-      courseCode: "CSCI-401",
-      finalExam: {
-        date: "2024-05-11",
-        time: "9AM - 12PM",
-      },
-    },
-    {
-      sectionNumber: "937583",
-      dayTime: "T/TH 2:00PM",
-      instructor: "Amy Lee",
-      courseCode: "CSCI-401",
-      finalExam: {
-        date: "2024-05-12",
-        time: "1PM - 4PM",
-      },
-    },
-    // ... more sections with their final exam details
-  ],
-  // ... other courses with their sections and final exam details
-};
+import { ICalendar } from "datebook";
+import * as FileSaver from "file-saver";
 
 const InputArea = () => {
+  //finals dummy data
+  const DUMMY_SECTIONS = {
+    "CSCI-401": [
+      {
+        sectionNumber: "193859",
+        dayTime: "M/W 2:00PM",
+        instructor: "Marcus Smith",
+        courseCode: "CSCI-401",
+        finalExam: {
+          date: "2024-05-11",
+          time: "9AM - 12PM",
+          startTime: moment
+            .tz(
+              "2024-05-11 9:00 AM",
+              "YYYY-MM-DD h:mm a",
+              "America/Los_Angeles"
+            )
+            .toDate(),
+          endTime: moment
+            .tz(
+              "2024-05-11 12:00 PM",
+              "YYYY-MM-DD h:mm a",
+              "America/Los_Angeles"
+            )
+            .toDate(),
+        },
+      },
+      {
+        sectionNumber: "937583",
+        dayTime: "T/TH 2:00PM",
+        instructor: "Amy Lee",
+        courseCode: "CSCI-401",
+        finalExam: {
+          date: "2024-05-12",
+          time: "1PM - 4PM",
+          startTime: moment
+            .tz(
+              "2024-05-12 1:00 PM",
+              "YYYY-MM-DD h:mm a",
+              "America/Los_Angeles"
+            )
+            .toDate(),
+          endTime: moment
+            .tz(
+              "2024-05-12 4:00 PM",
+              "YYYY-MM-DD h:mm a",
+              "America/Los_Angeles"
+            )
+            .toDate(),
+        },
+      },
+      // ... more sections with their final exam details
+    ],
+    // ... other courses with their sections and final exam details
+  };
+
   const [courseCode, setCourseCode] = useState("");
   const [sectionsData, setSectionsData] = useState([]);
   const [selectedSections, setSelectedSections] = useState([]);
+  const [exportLink, setExportLink] = useState("");
 
   const handleSearch = () => {
     // Replace with API call logic as necessary
@@ -56,6 +87,36 @@ const InputArea = () => {
       }
       return [...prevSelectedSections, section]; // Concatenate the new section
     });
+  };
+
+  const makeConfigFromSection = (section) => {
+    return {
+      title: section.courseCode + " Final",
+      description:
+        "Section: " +
+        section.sectionNumber +
+        "\nInstructor: " +
+        section.instructor,
+      start: section.finalExam.startTime,
+      end: section.finalExam.endTime,
+    };
+  };
+
+  const handleExportToCalendar = () => {
+    if (!selectedSections.length) return;
+    let ics;
+    selectedSections.forEach((section, idx) => {
+      if (idx === 0) {
+        // first element
+        ics = new ICalendar(makeConfigFromSection(section));
+      } else {
+        iCal.addEvent(new ICalendar(makeConfigFromSection(section)));
+      }
+    });
+    const blob = new Blob([ics.render()], {
+      type: "text/calendar",
+    });
+    FileSaver.saveAs(blob, "finals-schedule.ics");
   };
 
   return (
@@ -109,7 +170,10 @@ const InputArea = () => {
             <FinalExamTable selectedSections={selectedSections} />
           </div>
         </div>
-        <button className="bg-darkred text-white py-1.5 px-6 hover:bg-firebrick">
+        <button
+          className="bg-darkred text-white py-1.5 px-6 hover:bg-firebrick"
+          onClick={handleExportToCalendar}
+        >
           Export to Calendar
         </button>
       </form>
