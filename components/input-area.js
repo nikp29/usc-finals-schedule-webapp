@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SectionTable from "./SectionTable";
 import FinalExamTable from "./FinalExamTable";
+import moment from "moment-timezone";
 
 //finals dummy data
 const DUMMY_SECTIONS = {
