@@ -9,7 +9,7 @@ const DUMMY_SECTIONS = {
       sectionNumber: "193859",
       dayTime: "M/W 2:00PM",
       instructor: "Marcus Smith",
-      courseCode: 'CSCI-401',
+      courseCode: "CSCI-401",
       finalExam: {
         date: "2024-05-11",
         time: "9AM - 12PM",
@@ -19,7 +19,7 @@ const DUMMY_SECTIONS = {
       sectionNumber: "937583",
       dayTime: "T/TH 2:00PM",
       instructor: "Amy Lee",
-      courseCode: 'CSCI-401',
+      courseCode: "CSCI-401",
       finalExam: {
         date: "2024-05-12",
         time: "1PM - 4PM",
@@ -49,7 +49,9 @@ const InputArea = () => {
           (selected) => selected.sectionNumber === section.sectionNumber
         )
       ) {
-        return prevSelectedSections; // If already selected, don't add it again
+        return prevSelectedSections.filter(
+          (selected) => selected.sectionNumber !== section.sectionNumber
+        ); // If already selected, don't add it again
       }
       return [...prevSelectedSections, section]; // Concatenate the new section
     });
