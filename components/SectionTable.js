@@ -1,4 +1,5 @@
 const SectionTable = ({ sectionsData, onSectionClick }) => {
+    console.log(sectionsData);
   if (!sectionsData) return null;
 
   return (
@@ -20,20 +21,20 @@ const SectionTable = ({ sectionsData, onSectionClick }) => {
         <tbody>
           {sectionsData.map((section, index) => (
             <tr
-              key={section.sectionNumber}
+              key={section.SECTION}
               className={`cursor-pointer ${
                 index % 2 === 0 ? "bg-gray-200" : "bg-white"
               } hover:bg-blue-100 hover:opacity-90`}
               onClick={() => onSectionClick(section)}
             >
               <td className="px-4 py-2 border border-solid border-gray-300">
-                {section.sectionNumber}
+                {section.SECTION}
               </td>
               <td className="px-4 py-2 border border-solid border-silver">
-                {section.dayTime}
+                {section.DAYS} {section.START_TIME} - {section.END_TIME}
               </td>
               <td className="px-4 py-2 border border-solid border-silver">
-                {section.instructor}
+                {section.INSTRUCTOR_NAME}
               </td>
             </tr>
           ))}
