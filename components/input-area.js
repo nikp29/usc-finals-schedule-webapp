@@ -4,45 +4,7 @@ import FinalExamTable from "./FinalExamTable";
 import moment from "moment-timezone";
 import { ICalendar } from "datebook";
 import * as FileSaver from "file-saver";
-//finals dummy data
-const DUMMY_SECTIONS = {
-  "CSCI-401": [
-    {
-      sectionNumber: "193859",
-      dayTime: "M/W 2:00PM",
-      instructor: "Marcus Smith",
-      courseCode: "CSCI-401",
-      finalExam: {
-        date: "2024-05-11",
-        time: "9AM - 12PM",
-        startTime: moment
-          .tz("2024-05-11 9:00 AM", "YYYY-MM-DD h:mm a", "America/Los_Angeles")
-          .toDate(),
-        endTime: moment
-          .tz("2024-05-11 12:00 PM", "YYYY-MM-DD h:mm a", "America/Los_Angeles")
-          .toDate(),
-      },
-    },
-    {
-      sectionNumber: "937583",
-      dayTime: "T/TH 2:00PM",
-      instructor: "Amy Lee",
-      courseCode: "CSCI-401",
-      finalExam: {
-        date: "2024-05-12",
-        time: "1PM - 4PM",
-        startTime: moment
-          .tz("2024-05-12 1:00 PM", "YYYY-MM-DD h:mm a", "America/Los_Angeles")
-          .toDate(),
-        endTime: moment
-          .tz("2024-05-12 4:00 PM", "YYYY-MM-DD h:mm a", "America/Los_Angeles")
-          .toDate(),
-      },
-    },
-    // ... more sections with their final exam details
-  ],
-  // ... other courses with their sections and final exam details
-};
+import { supabase } from "../utils/supabase";
 
 const InputArea = () => {
   const [courseCode, setCourseCode] = useState("");
@@ -50,9 +12,13 @@ const InputArea = () => {
   const [selectedSections, setSelectedSections] = useState([]);
   const [exportLink, setExportLink] = useState("");
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     // Replace with API call logic as necessary
-    const data = DUMMY_SECTIONS[courseCode];
+    const { data, error } = await supabase.from("Courses").select('*').eq('COURSE_CODE', courseCode);
+    if (error) {
+      console.error("Error fetching data:", error);
+      return;
+    }
     setSectionsData(data);
   };
 
