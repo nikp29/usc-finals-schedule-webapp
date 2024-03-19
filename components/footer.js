@@ -21,6 +21,48 @@ const Footer = () => {
                     <div className= "top-[70px] absolute">Commonly searched terms</div>
                 </div>
             </div>
+            <div className="bg-white flex flex-row m-10">
+                <div className="basis-1/3">
+                     <img className="w-40" src="/uscLogo.png"/>
+                     <p class="text-[18px] text-slate-700">
+                    University Park Campus<br></br>
+                    700 Childs Way,<br></br>
+                    John Hubbard Hall Lobby (JHH)<br></br>
+                    Los Anglees, CA 90089-0912<br></br>
+                    </p>
+                    <a href="https://arr.usc.edu/contact/" className="text-[18px] text-red-800 no-underline hover:underline">Contact Us</a>
+                </div>
+                <div className="flex flex-col basis-1/3 text-base space-y-6 mt-4 pl-20 pr-6 divide-y-2 divide-dashed divide-slate-200">
+                    <a href="https://my.usc.edu" className="text-black no-underline hover:underline">myUSC</a>
+         
+                    <a href="https://financialaid.usc.edu" className="text-black no-underline hover:underline">Financial Aid</a>
+                
+                    <a href="https://sfs.usc.edu" className="text-black no-underline hover:underline">Student Financial Services</a>
+
+                    <a href="https://classes.usc.edu" className="text-black no-underline hover:underline">Schedule of Classes</a>
+    
+                    <a href="https://catalogue.usc.edu" className="text-black no-underline hover:underline">Catalogue</a>
+                    <hr width="450"></hr>
+                </div>
+                <div className="basis-1/3 font-light">
+                    <p class="text-[14px] text-slate-700 font-[300]">
+                    Annual Security & Fire Safety Prospective Student Notification 2023:
+                    </p>
+                    <p class="text-[14px] text-slate-700 font-[300]">
+                    The University of Southern California’s Annual Security and Fire Safety 
+                    Reports (ASR) for the past three years are available online at: <a href="https://dps.usc.edu/alerts/annual-report/" className="text-red-800 no-underline hover:underline"> https://dps.usc.edu/alerts/annual-report/ </a>.
+                    </p>
+                    <p class="text-[14px] text-slate-700 font-[300]">
+                    The Annual Security and Fire Safety Report includes Clery Act crime and fire statistics 
+                    for the preceding three years for locations owned and or controlled by USC, the required 
+                    policy disclosure statements and other important safety related information.A paper copy 
+                    of the ASR is available on request made to Department of Public Safety Records by calling 
+                    (213) 740-6000, by email to DPSRecords@dps.usc.edu or in person at DPS at 3667 South 
+                    McClintock Avenue, Los Angeles, California 90089.
+                    </p>
+                </div>
+            </div>
+
         </section>
     );
 };
