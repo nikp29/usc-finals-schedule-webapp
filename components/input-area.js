@@ -125,7 +125,7 @@ const InputArea = () => {
               value={courseCode}
               onChange={(e) => setCourseCode(e.target.value)}
               className="w-full md:w-auto bg-gainsboro p-2.5 border border-gray-300"
-              placeholder="Enter Course Code"
+              placeholder="EX. WRIT-150"
             />
             <button
               type="button"
