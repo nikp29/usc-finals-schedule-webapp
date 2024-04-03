@@ -18,10 +18,16 @@ const InputArea = () => {
     const { data, error } = await supabase
       .from("Courses")
       .select("*")
-      .eq("COURSE_CODE", courseCode);
+      .eq("COURSE_CODE", courseCode.toUpperCase().trim());
     if (error) {
       console.error("Error fetching data:", error);
-      setErrorText("Invalid course code");
+      setErrorText("Error fetching data. Please try again later.");
+      setSectionsData([]);
+      return;
+    }
+    if (!data.length) {
+      setErrorText("No data found for course code: " + courseCode);
+      setSectionsData([]);
       return;
     }
     setSectionsData(data);
