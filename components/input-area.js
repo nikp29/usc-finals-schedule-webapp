@@ -11,15 +11,21 @@ const InputArea = () => {
   const [sectionsData, setSectionsData] = useState([]);
   const [selectedSections, setSelectedSections] = useState([]);
   const [exportLink, setExportLink] = useState("");
+  const [errorText, setErrorText] = useState("");
 
   const handleSearch = async () => {
     // Replace with API call logic as necessary
-    const { data, error } = await supabase.from("Courses").select('*').eq('COURSE_CODE', courseCode);
+    const { data, error } = await supabase
+      .from("Courses")
+      .select("*")
+      .eq("COURSE_CODE", courseCode);
     if (error) {
       console.error("Error fetching data:", error);
+      setErrorText("Invalid course code");
       return;
     }
     setSectionsData(data);
+    setErrorText("");
   };
 
   const handleSectionClick = (section) => {
@@ -101,6 +107,11 @@ const InputArea = () => {
               Search
             </button>
           </div>
+          {errorText && (
+            <p className="text-md font-mada text-red-600 !mt-0 !mb-0">
+              {errorText}
+            </p>
+          )}
         </div>
         <div className="flex flex-col gap-4 max-w-full">
           <h2 className="text-6xl font-medium font-mada text-black">
