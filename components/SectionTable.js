@@ -1,5 +1,4 @@
 const SectionTable = ({ sectionsData, onSectionClick }) => {
-    console.log(sectionsData);
   if (!sectionsData) return null;
 
   return (

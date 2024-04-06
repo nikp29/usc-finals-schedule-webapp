@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="bg-white flex flex-row m-10">
                 <div className="basis-1/3">
                      <img className="w-40" src="/uscLogo.png"/>
-                     <p class="text-[18px] text-slate-700">
+                     <p className ="text-[18px] text-slate-700">
                     University Park Campus<br></br>
                     700 Childs Way,<br></br>
                     John Hubbard Hall Lobby (JHH)<br></br>
@@ -45,14 +45,14 @@ const Footer = () => {
                     <hr width="450"></hr>
                 </div>
                 <div className="basis-1/3 font-light">
-                    <p class="text-[14px] text-slate-700 font-[300]">
+                    <p className ="text-[14px] text-slate-700 font-[300]">
                     Annual Security & Fire Safety Prospective Student Notification 2023:
                     </p>
-                    <p class="text-[14px] text-slate-700 font-[300]">
+                    <p className="text-[14px] text-slate-700 font-[300]">
                     The University of Southern California’s Annual Security and Fire Safety 
                     Reports (ASR) for the past three years are available online at: <a href="https://dps.usc.edu/alerts/annual-report/" className="text-red-800 no-underline hover:underline"> https://dps.usc.edu/alerts/annual-report/ </a>.
                     </p>
-                    <p class="text-[14px] text-slate-700 font-[300]">
+                    <p className="text-[14px] text-slate-700 font-[300]">
                     The Annual Security and Fire Safety Report includes Clery Act crime and fire statistics 
                     for the preceding three years for locations owned and or controlled by USC, the required 
                     policy disclosure statements and other important safety related information.A paper copy 

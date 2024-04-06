@@ -1,53 +1,99 @@
-import React, { useState } from "react";
-import SectionTable from "./SectionTable";
-import FinalExamTable from "./FinalExamTable";
-import moment from "moment-timezone";
-import { ICalendar } from "datebook";
-import * as FileSaver from "file-saver";
-import { supabase } from "../utils/supabase";
+import React, { useState } from 'react';
+import SectionTable from './SectionTable';
+import FinalExamTable from './FinalExamTable';
+import moment from 'moment-timezone';
+import { ICalendar } from 'datebook';
+import * as FileSaver from 'file-saver';
+import { supabase } from '../utils/supabase';
 
 const InputArea = () => {
-  const [courseCode, setCourseCode] = useState("");
+  const [courseCode, setCourseCode] = useState('');
   const [sectionsData, setSectionsData] = useState([]);
   const [selectedSections, setSelectedSections] = useState([]);
-  const [exportLink, setExportLink] = useState("");
-  const [errorText, setErrorText] = useState("");
+  const [errorText, setErrorText] = useState('');
 
   const handleSearch = async () => {
-    // Replace with API call logic as necessary
     const { data, error } = await supabase
-      .from("Courses")
-      .select("*")
-      .eq("COURSE_CODE", courseCode.toUpperCase().trim());
+      .from('Courses')
+      .select('*')
+      .eq('COURSE_CODE', courseCode.toUpperCase().trim());
     if (error) {
-      console.error("Error fetching data:", error);
-      setErrorText("Error fetching data. Please try again later.");
+      console.error('Error fetching data:', error);
+      setErrorText('Error fetching data. Please try again later.');
       setSectionsData([]);
       return;
     }
     if (!data.length) {
-      setErrorText("No data found for course code: " + courseCode);
+      setErrorText('No data found for course code: ' + courseCode);
       setSectionsData([]);
       return;
     }
     setSectionsData(data);
-    setErrorText("");
+    setErrorText('');
   };
 
-  const handleSectionClick = (section) => {
-    setSelectedSections((prevSelectedSections) => {
-      // Check if the section is already selected
-      if (
-        prevSelectedSections.some(
-          (selected) => selected.sectionNumber === section.sectionNumber
-        )
-      ) {
-        return prevSelectedSections.filter(
-          (selected) => selected.sectionNumber !== section.sectionNumber
-        ); // If already selected, don't add it again
+  const handleSectionClick = async (section) => {
+    const { data: exceptionData, error: exceptionError } = await supabase
+      .from('Exceptions')
+      .select('*')
+      .eq('COURSE_CODE', section.COURSE_CODE.toUpperCase().trim());
+
+    if (exceptionError) {
+      console.error('Error fetching from Exceptions:', exceptionError);
+      return;
+    }
+    if (exceptionData.length) {
+      processExceptionData(exceptionData[0], section);
+    } else {
+      await fetchCourseAndFinalExamTimes(section);
+    }
+    clearSearchAndSectionTable();
+  };
+
+  const fetchCourseAndFinalExamTimes = async (section) => {
+    const { data: finalExamData, error: finalExamError } = await supabase
+      .from('Final Exam Times')
+      .select('EXAM_TIME, EXAM_DAY, EDGE_CASE')
+      .eq('DAYS', section.DAYS)
+      .eq('START_TIME', section.START_TIME);
+    if (finalExamError || !finalExamData.length) {
+      console.error('Error fetching from Final Exam Times or no data found:', finalExamError);
+      return;
+    }
+    processFinalExamData(finalExamData[0], section);
+  };
+
+  const clearSearchAndSectionTable = () => {
+    setSectionsData([]);
+    setCourseCode('');
+  }
+
+  const processFinalExamData = (finalExam, section) => {
+    if (finalExam.EXAM_TIME !== 'N/A') {
+      const finalExamInformation = {
+        courseCode: section.COURSE_CODE,
+        examDay: finalExam.EXAM_DAY,
+        examTime: finalExam.EXAM_TIME
       }
-      return [...prevSelectedSections, section]; // Concatenate the new section
-    });
+      setSelectedSections(prevSelectedSections => [
+        ...prevSelectedSections,
+        finalExamInformation
+      ]);
+    } else {
+      alert(finalExam.EDGE_CASE);
+    }
+  };
+
+  const processExceptionData = (exception) => {
+    const finalExamInformation = {
+      courseCode: exception.COURSE_CODE,
+      examDay: exception.EXAMINATION_DAY,
+      examTime: exception.EXAMINATION_TIME
+    }
+    setSelectedSections(prevSelectedSections => [
+      ...prevSelectedSections,
+      finalExamInformation
+    ]);
   };
 
   const makeConfigFromSection = (section) => {

@@ -7,7 +7,7 @@ const FinalExamTable = ({ selectedSections }) => {
         <thead>
           <tr className="text-xs font-semibold text-black bg-gray-100">
             <th className="px-4 py-2 border border-solid border-silver">
-              Course/Section Number
+              Course
             </th>
             <th className="px-4 py-2 border border-solid border-silver">
               Date
@@ -24,13 +24,13 @@ const FinalExamTable = ({ selectedSections }) => {
               className={`${index % 2 === 0 ? "bg-gray-200" : "bg-white"}`}
             >
               <td className="px-4 py-2 border border-solid border-gray-300">
-                {`${section.courseCode}/${section.sectionNumber}`}
+                {`${section.courseCode}`}
               </td>
               <td className="px-4 py-2 border border-solid border-silver">
-                {section.finalExam.date}
+                {section.examDay}
               </td>
               <td className="px-4 py-2 border border-solid border-silver">
-                {section.finalExam.time}
+                {section.examTime}
               </td>
             </tr>
           ))}
