@@ -1,0 +1,442 @@
+DAYS,START_TIME,IS_EDGE_CASE,EXAM_DAY,EXAM_TIME,EDGE_CASE
+F,7:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,8:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,9:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,12:15,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,13:05,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,15:05,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,15:10,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,16:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+F,16:10,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+F,16:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+F,17:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+F,17:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+F,18:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+F,19:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+F,20:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+F,12:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F | F,10:00 | 16:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F | F,9:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F | F,9:00 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F | F,9:00 | 15:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F | F,9:30 | 9:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F | M,12:00 | 12:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F | M,9:00 | 17:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F | S,17:30 | 9:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+FS,9:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,5:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,6:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,7:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,8:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,9:15,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,10:00,Y,N/A,N/A,"If your class ends at 10:50, Tuesday, May 7, 8-10 a.m. If your class ends at 11:50, Tuesday, May 7 11 a.m.-1 p.m."
+H,10:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,15:20,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,16:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+H,16:10,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+H,16:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+H,17:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+H,17:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+H,17:45,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+H,18:10,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+H,18:30,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+H,18:40,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+H,19:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+H,19:10,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+H,19:20,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+H,19:30,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+H,19:35,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+H,12:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,16:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,18:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,19:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | F,10:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | F,12:00 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | F,13:00 | 15:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | F,14:00 | 15:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | F,15:30 | 15:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | F,9:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | H,10:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | H,12:30 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | H,16:00 | 19:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | H | F,13:00 | 17:00 | 15:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | M,13:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | MW,15:00 | 15:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | T,12:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+H | W,19:00 | 12:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+HF,10:00,Y,N/A,N/A,"If your class ends at 10:50, Tuesday, May 7, 8-10 a.m. If your class ends at 11:50, Tuesday, May 7 11 a.m.-1 p.m."
+M,8:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M,8:55,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+M,9:20,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M,10:15,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M,10:40,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M,11:05,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M,16:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+M,16:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+M,17:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+M,17:20,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+M,17:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+M,17:45,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+M,18:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+M,18:30,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+M,18:40,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+M,19:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+M,19:20,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+M,19:30,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+M,19:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | F,11:30 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | F,12:30 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | F,13:00 | 15:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | F,13:00 | 16:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | F,15:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | F,15:00 | 15:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | F,19:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | F,TBA | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | M,12:00 | 17:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | M,15:30 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | M,8:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | MW | W,9:00 | 13:00 | 9:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | T,10:00 | 19:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | TH,15:30 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | W,10:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | W,10:00 | 9:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | W,10:30 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | W,12:00 | 12:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | W,13:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | W,14:30 | 14:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | W,19:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+M | W,9:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MF | W,13:00 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MF | W,13:00 | 16:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MH,17:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MH,19:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MTH | W,12:00 | 12:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MTW | H,12:00 | 12:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MTWH | TWH,TBA | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MTWHF,18:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MTWHF,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW,11:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW,16:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+MW,16:15,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+MW,17:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+MW,17:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+MW,18:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW,18:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW,12:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW | F,12:00 | 11:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW | F,13:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW | F,13:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW | F,13:00 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW | F,14:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW | F,14:00 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MW | MW,9:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+MWF,16:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+MWF | T,16:00 | 16:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S,7:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S,8:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,10:30,N,"Monday, May 6",8-10 a.m.,N/A
+S,8:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S,9:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S,9:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S,10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S,11:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S,12:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S,13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+S | T,7:50 | 18:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+SU,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,7:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,8:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,10:00,Y,N/A,N/A,"If your class ends at 10:50, Tuesday, May 7, 8-10 a.m. If your class ends at 11:50, Tuesday, May 7 11 a.m.-1 p.m."
+T,10:15,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,10:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,11:05,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,11:35,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,12:15,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,13:20,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,14:20,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,15:20,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,16:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+T,16:10,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+T,16:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+T,17:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+T,17:20,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+T,17:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+T,17:45,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+T,18:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,18:20,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,18:30,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,18:40,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,18:45,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,19:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,19:10,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,19:15,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,19:20,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,19:30,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,19:35,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+T,12:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,17:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,18:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,19:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | F,12:00 | 12:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | F,13:00 | 12:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | F,13:00 | 16:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | F,16:00 | 12:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | F,19:00 | 16:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | F,19:00 | 9:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,10:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,10:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,11:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,11:00 | 16:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,11:00 | 18:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,12:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,13:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,13:00 | 9:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,13:30 | 13:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,14:30 | 14:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,16:00 | 19:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,17:00 | 17:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,18:00 | 18:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,9:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,9:00 | 13:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | H,9:00 | 9:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | M,12:00 | 18:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | M,12:00 | 18:00 | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | M,16:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | T,11:00 | 18:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | T,17:00 | 19:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | T,8:00 | 8:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | T,9:00 | 11:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | T | T,10:00 | 14:00 | 18:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | T | W,19:00 | 19:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+T | W,16:00 | 11:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TF,10:00,Y,N/A,N/A,"If your class ends at 10:50, Tuesday, May 7, 8-10 a.m. If your class ends at 11:50, Tuesday, May 7 11 a.m.-1 p.m."
+TH,7:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,7:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,9:15,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,10:00,Y,N/A,N/A,"If your class ends at 10:50, Tuesday, May 7, 8-10 a.m. If your class ends at 11:50, Tuesday, May 7 11 a.m.-1 p.m."
+TH,10:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,11:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,16:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+TH,16:15,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+TH,16:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+TH,17:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+TH,17:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+TH,18:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,18:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,19:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,19:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH | F,10:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH | F,14:00 | 14:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH | T | H,9:00 | 13:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH | T | T,9:00 | 19:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH | T | W,9:00 | 16:00 | 19:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TH | TH,9:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TWH,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TWH | TW,TBA | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+TWHF,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,7:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,7:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,8:45,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,9:20,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,10:15,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,10:40,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,13:20,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,14:20,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,14:35,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W,16:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+W,16:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+W,17:00,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+W,17:20,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+W,17:30,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+W,17:45,Y,N/A,N/A,"4:30-6:30 p.m. first scheduled class period, May 1-8"
+W,18:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+W,18:15,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+W,18:30,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+W,18:40,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+W,19:00,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+W,19:20,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+W,19:30,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+W,19:35,Y,N/A,N/A,"7-9 p.m. first scheduled class period, May 1-8"
+W,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W | F,10:00 | 11:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W | F,9:00 | 13:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W | H,13:00 | 9:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W | H,TBA | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W | S | M,18:30 | 9:00 | 18:30,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W | W,9:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+W | W | W | F,9:00 | 13:00 | 16:00 | 13:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+WF | M,10:00 | 10:00,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+,| TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+,TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+,TBA | TBA,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+,,Y,N/A,N/A,Please talk to your instructor to determine your final exam time
+F,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+F,8:30,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+F,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+F,9:30,N,"Friday, May 3",8-10 a.m.,N/A
+F,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+F,11:30,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+F,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+F,12:30,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+F,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+F,13:30,N,"Wednesday, May 1",2-4 p.m.,N/A
+F,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+F,14:30,N,"Monday, May 6",2-4 p.m.,N/A
+F,15:00,N,"Friday, May 3",2-4 p.m.,N/A
+F,15:30,N,"Friday, May 3",2-4 p.m.,N/A
+H,8:00,N,"Wednesday, May 8",8-10 a.m.,N/A
+H,8:30,N,"Wednesday, May 8",8-10 a.m.,N/A
+H,9:00,N,"Tuesday, May 7",8-10 a.m.,N/A
+H,9:30,N,"Tuesday, May 7",8-10 a.m.,N/A
+H,11:00,N,"Tuesday, May 7",11 a.m.-1 p.m.,N/A
+H,11:30,N,"Tuesday, May 7",11 a.m.-1 p.m.,N/A
+H,12:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+H,12:30,N,"Wednesday, May 8",2-4 p.m.,N/A
+H,13:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+H,13:30,N,"Thursday, May 2",2-4 p.m.,N/A
+H,14:00,N,"Thursday, May 2",2-4 p.m.,N/A
+H,14:30,N,"Thursday, May 2",2-4 p.m.,N/A
+H,15:00,N,"Tuesday, May 7",2-4 p.m.,N/A
+H,15:30,N,"Tuesday, May 7",2-4 p.m.,N/A
+H,18:00,N,"Thursday, May 2",7-9 p.m.,N/A
+H,20:00,N,"Tuesday, May 7",7-9 p.m.,N/A
+M,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+M,8:30,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+M,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+M,9:30,N,"Friday, May 3",8-10 a.m.,N/A
+M,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+M,10:30,N,"Monday, May 6",8-10 a.m.,N/A
+M,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+M,11:30,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+M,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+M,12:30,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+M,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+M,13:30,N,"Wednesday, May 1",2-4 p.m.,N/A
+M,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+M,15:00,N,"Friday, May 3",2-4 p.m.,N/A
+M,15:30,N,"Friday, May 3",2-4 p.m.,N/A
+MF,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+MF,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+MF,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+MF,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+MF,15:00,N,"Friday, May 3",2-4 p.m.,N/A
+MH,9:30,N,"Friday, May 3",8-10 a.m.,N/A
+MH,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+MH,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+MH,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+MHFSU,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+MTH,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+MTHF,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+MTHF,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+MTHF,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+MTHF,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+MTHF,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+MTWH,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+MTWH,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+MTWH,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+MTWH,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+MTWH,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+MTWH,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+MTWH,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+MTWHF,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+MTWHF,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+MTWHF,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+MTWHF,10:30,N,"Monday, May 6",8-10 a.m.,N/A
+MTWHF,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+MTWHFS,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+MW,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+MW,8:30,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+MW,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+MW,9:30,N,"Friday, May 3",8-10 a.m.,N/A
+MW,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+MW,10:30,N,"Monday, May 6",8-10 a.m.,N/A
+MW,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+MW,11:30,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+MW,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+MW,12:30,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+MW,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+MW,13:30,N,"Wednesday, May 1",2-4 p.m.,N/A
+MW,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+MW,15:00,N,"Friday, May 3",2-4 p.m.,N/A
+MW,15:30,N,"Friday, May 3",2-4 p.m.,N/A
+MWF,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+MWF,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+MWF,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+MWF,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+MWF,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+MWF,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+MWF,14:30,N,"Monday, May 6",2-4 p.m.,N/A
+MWHF,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+MWHF,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+MWHF,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+MWHF,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+MWHF,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+MWHF,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+T,8:00,N,"Wednesday, May 8",8-10 a.m.,N/A
+T,8:30,N,"Wednesday, May 8",8-10 a.m.,N/A
+T,9:00,N,"Tuesday, May 7",8-10 a.m.,N/A
+T,9:30,N,"Tuesday, May 7",8-10 a.m.,N/A
+T,11:00,N,"Tuesday, May 7",11 a.m.-1 p.m.,N/A
+T,11:30,N,"Tuesday, May 7",11 a.m.-1 p.m.,N/A
+T,12:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+T,12:30,N,"Wednesday, May 8",2-4 p.m.,N/A
+T,13:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+T,13:30,N,"Thursday, May 2",2-4 p.m.,N/A
+T,14:00,N,"Thursday, May 2",2-4 p.m.,N/A
+T,14:30,N,"Thursday, May 2",2-4 p.m.,N/A
+T,15:00,N,"Tuesday, May 7",2-4 p.m.,N/A
+T,15:30,N,"Tuesday, May 7",2-4 p.m.,N/A
+TF,13:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+TF,15:00,N,"Tuesday, May 7",2-4 p.m.,N/A
+TH,8:00,N,"Wednesday, May 8",8-10 a.m.,N/A
+TH,8:30,N,"Wednesday, May 8",8-10 a.m.,N/A
+TH,9:00,N,"Tuesday, May 7",8-10 a.m.,N/A
+TH,9:30,N,"Tuesday, May 7",8-10 a.m.,N/A
+TH,11:00,N,"Tuesday, May 7",11 a.m.-1 p.m.,N/A
+TH,11:30,N,"Tuesday, May 7",11 a.m.-1 p.m.,N/A
+TH,12:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+TH,12:30,N,"Wednesday, May 8",2-4 p.m.,N/A
+TH,13:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+TH,14:00,N,"Thursday, May 2",2-4 p.m.,N/A
+TH,14:30,N,"Thursday, May 2",2-4 p.m.,N/A
+TH,15:00,N,"Tuesday, May 7",2-4 p.m.,N/A
+TH,15:30,N,"Tuesday, May 7",2-4 p.m.,N/A
+THF,14:00,N,"Thursday, May 2",2-4 p.m.,N/A
+TW,9:00,N,"Tuesday, May 7",8-10 a.m.,N/A
+TWHF,11:00,N,"Tuesday, May 7",11 a.m.-1 p.m.,N/A
+TWHF,12:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+TWHF,13:00,N,"Wednesday, May 8",2-4 p.m.,N/A
+TWHF,14:00,N,"Thursday, May 2",2-4 p.m.,N/A
+W,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+W,8:30,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+W,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+W,9:30,N,"Friday, May 3",8-10 a.m.,N/A
+W,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+W,10:30,N,"Monday, May 6",8-10 a.m.,N/A
+W,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+W,11:30,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+W,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+W,12:30,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+W,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+W,13:30,N,"Wednesday, May 1",2-4 p.m.,N/A
+W,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+W,14:30,N,"Monday, May 6",2-4 p.m.,N/A
+W,15:00,N,"Friday, May 3",2-4 p.m.,N/A
+W,15:30,N,"Friday, May 3",2-4 p.m.,N/A
+WF,8:00,N,"Monday, May 6",11 a.m.-1 p.m.,N/A
+WF,9:00,N,"Friday, May 3",8-10 a.m.,N/A
+WF,10:00,N,"Monday, May 6",8-10 a.m.,N/A
+WF,10:30,N,"Monday, May 6",8-10 a.m.,N/A
+WF,11:00,N,"Wednesday, May 1",11 a.m.-1 p.m.,N/A
+WF,12:00,N,"Friday, May 3",11 a.m.-1 p.m.,N/A
+WF,13:00,N,"Wednesday, May 1",2-4 p.m.,N/A
+WF,14:00,N,"Monday, May 6",2-4 p.m.,N/A
+WF,14:30,N,"Monday, May 6",2-4 p.m.,N/A
+WF,15:00,N,"Friday, May 3",2-4 p.m.,N/A
