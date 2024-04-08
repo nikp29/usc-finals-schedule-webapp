@@ -62,7 +62,7 @@ Navigate to the database tab in supabase. Click the green "New Table" button. Fo
 
 ### Upload the Exceptions CSV
 
-Navigate to the database tab in supabase. Click the green "New Table" button. Follow the input in these two screenshots. [1](./more_screenshots/supabase_exceptions_create_1.png()) [2](./more_screenshots/supabase_exceptions_create_2.png) Then, click the green "Save" button.
+Navigate to the database tab in supabase. Click the green "New Table" button. Follow the input in these two screenshots. [1](./more_screenshots/supabase_exceptions_create_1.png) [2](./more_screenshots/supabase_exceptions_create_2.png) Then, click the green "Save" button.
 
 ## Step 2: Run Application
 @team
