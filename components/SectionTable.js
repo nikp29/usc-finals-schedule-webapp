@@ -1,3 +1,9 @@
+/* The SectionTable component is a React functional component designed to display a table of
+ * course sections. Here's a brief description of its features:
+ *
+ *Props: It accepts two props: sectionsData, an array containing data for course sections, and
+ * onSectionClick, a function to handle clicks on individual sections.
+ */
 const SectionTable = ({ sectionsData, onSectionClick }) => {
   if (!sectionsData) return null;
 

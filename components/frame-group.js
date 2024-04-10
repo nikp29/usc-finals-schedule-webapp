@@ -1,3 +1,6 @@
+/* The FrameGroup component is a React functional component that
+ * represents a header section within a larger user interface.
+ */
 const FrameGroup = () => {
   return (
     <section className="self-stretch flex flex-col items-end justify-start max-w-full text-left text-41xl text-white font-mada">

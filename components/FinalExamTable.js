@@ -1,3 +1,9 @@
+/* The FinalExamTable component is a React functional component that displays a
+ * table of final exam information for selected sections of courses. Here's a breakdown
+ * of its functionality:
+ * Props: It accepts a single prop selectedSections, which is an array containing
+ * information about the selected course sections.
+ */
 const FinalExamTable = ({ selectedSections }) => {
   if (!selectedSections || !selectedSections.length) return null;
 
