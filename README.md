@@ -6,7 +6,7 @@ As of May 1, 2024, the application is currently populated with class data and fi
 
 ## Step 0: Get Supabase Credentials
 
-@team, what's the best way to do this?
+During the handoff meeting, USC ITS should provide an email address to the student development team that ITS will use to access the Supabase database. The student development team will send out an invite to the Supabase database to that email address.
 
 ## Step 1: Generating and Uploading CSVs
 
@@ -64,7 +64,18 @@ Navigate to the database tab in supabase. Click the green "New Table" button. Fo
 
 Navigate to the database tab in supabase. Click the green "New Table" button. Follow the input in these two screenshots. [1](./more_screenshots/supabase_exceptions_create_1.png) [2](./more_screenshots/supabase_exceptions_create_2.png) Then, click the green "Save" button.
 
-## Step 2: Run Application
+## Step 2: Software Requirements
 
-1. Install packages `npm install`
-2. Run in localhost `npm run dev`
+To run the application, Node.js version 18.17 or later is required. You can download it [here](https://nodejs.org/en).
+
+The application runs on Next.js. You can download it [here](https://nextjs.org/docs/getting-started/installation).
+
+## Step 3: Run Application
+
+1. Navigate to the root directory of this project.
+2. Install packages `npm install`
+3. Run in localhost `npm run dev`
+
+## Other Notes
+
+This application is designed to work with the Supabase database [usc-finals-schedule-webapp](https://supabase.com/dashboard/project/whbcbxgzsmadzbymhfhm). However, this can be configured to a different database. This is done through modifying the values in lines 3 and 4 of [supabase.js](./utils/supabase.js), which is currently configured to pull values from a .env or .env.local file.
