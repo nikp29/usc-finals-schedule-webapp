@@ -29,8 +29,7 @@ import React, { useState } from "react";
 import SectionTable from "./SectionTable";
 import FinalExamTable from "./FinalExamTable";
 import moment from "moment-timezone";
-import { ICalendar } from "datebook";
-import * as FileSaver from "file-saver";
+import { GoogleCalendar } from "datebook";
 import { supabase } from "../utils/supabase";
 
 const InputArea = () => {
@@ -60,7 +59,18 @@ const InputArea = () => {
       setSectionsData([]);
       return;
     }
-    setSectionsData(data);
+      // Default any missing data to "N/A"
+    const sectionsWithDefaults = data.map(section => ({
+      ...section,
+      COURSE_CODE: section.COURSE_CODE || "N/A",
+      DAYS: section.DAYS || "N/A",
+      START_TIME: section.START_TIME || "N/A",
+      END_TIME: section.END_TIME || "N/A",
+      INSTRUCTOR_NAME: section.INSTRUCTOR_NAME || "N/A",
+      SECTION: section.SECTION || "N/A",
+    }));
+
+    setSectionsData(sectionsWithDefaults);
     setErrorText("");
   };
 
@@ -130,9 +140,9 @@ const InputArea = () => {
   const processFinalExamData = (finalExam, section) => {
     if (finalExam.EXAM_TIME !== "N/A") {
       const finalExamInformation = {
-        courseCode: section.COURSE_CODE,
-        examDay: finalExam.EXAM_DAY,
-        examTime: finalExam.EXAM_TIME,
+        courseCode: section.COURSE_CODE || "N/A",
+        examDay: finalExam.EXAM_DAY || "N/A",
+        examTime: finalExam.EXAM_TIME || "N/A",
       };
       setSelectedSections((prevSelectedSections) => [
         ...prevSelectedSections,
@@ -155,34 +165,36 @@ const InputArea = () => {
     ]);
   };
 
-  const makeConfigFromSection = (section) => {
-    return {
-      title: section.courseCode + " Final",
-      description:
-        "Section: " +
-        section.sectionNumber +
-        "\nInstructor: " +
-        section.instructor,
-      start: section.finalExam.startTime,
-      end: section.finalExam.endTime,
-    };
-  };
-
   const handleExportToCalendar = () => {
-    if (!selectedSections.length) return;
-    let ics;
-    selectedSections.forEach((section, idx) => {
-      if (idx === 0) {
-        // first element
-        ics = new ICalendar(makeConfigFromSection(section));
-      } else {
-        ics.addEvent(new ICalendar(makeConfigFromSection(section)));
-      }
+    selectedSections.forEach(section => {
+      const currentYear = new Date().getFullYear();
+      const examDate = section.examDay + ', ' + currentYear;
+      
+      const startTimeStr = examDate + ' ' + section.examTime.split('-')[0].trim();
+      const endTimeStr = examDate + ' ' + section.examTime.split('-')[1].trim();
+  
+      const startTime = moment(startTimeStr, 'dddd, MMMM D, YYYY h:mm a').toDate();
+      const endTime = moment(endTimeStr, 'dddd, MMMM D, YYYY h:mm a').toDate();
+    
+      // Configure the options for the GoogleCalendar instance
+      const options = {
+        title: `${section.courseCode} Final Exam`,
+        location: 'University Campus',
+        description: `Final exam for ${section.courseCode}`,
+        start: startTime,
+        end: endTime
+      };
+    
+      // Create a new GoogleCalendar instance with the provided options
+      const googleCalendar = new GoogleCalendar(options);
+    
+      // Optionally set additional parameters
+      googleCalendar.setParam('crm', 'BUSY');
+      googleCalendar.setParam('trp', 'true');
+    
+      // Open the Google Calendar URL in a new window/tab
+      window.open(googleCalendar.render(), '_blank');
     });
-    const blob = new Blob([ics.render()], {
-      type: "text/calendar",
-    });
-    FileSaver.saveAs(blob, "finals-schedule.ics");
   };
 
   return (
